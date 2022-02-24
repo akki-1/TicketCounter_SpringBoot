@@ -1,4 +1,6 @@
 
+
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,33 +11,31 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Akki's Ticket Counter.</title>
+    <title>Login</title>
   </head>
   <body>
-    <form action="details">
+  <h2>WELCOME TO LOGIN PAGE</h2>
+<h2>Account Login </h2>
+<form action ="login" method="post">
+<table>
+<tr>
+<td>Username:</td><td>
+<input type ="text" name="username"/></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type ="password" name="password"/></td>
+</tr>
+</table>
+<button style="margin-left: 550px" type="submit" class="btn btn-primary">SignIn</button><br>
+    <small style="margin-left: 510px"  class="form-text text-muted">${msg }</small>
 
-<h1 align="center">WelCome to Ticket Counter</h1>  <button formaction="signin" style="margin-left: 60px" type="submit" class="btn btn-primary">Log Out</button>
-
-<h2 align="center">Please Enter Your Boarding and Arriving Station Details below</h2><br>
+</form>
 
 
-  <div align="center" class="form-group mb-2">
-    <label style="margin-right: 20px" for="exampleInputEmail1">From</label><br>
-    <input name="board" style="margin-right: 10px" type="text" class="form-group mb-2"  placeholder="Boardin Station">
-  </div>
-  <div align="center" class="form-group mb-2">
-    <label style="margin-right: 20px" for="exampleInputPassword1">To</label><br>
-    <input name="arriving" style="margin-right: 5px" type="text" class="form-group mb-2"  placeholder="Destination"><br>
-  </div>  
-  <button style="margin-left: 640px" type="submit" class="btn btn-primary">Submit</button>
-</form><br>
+ 
 
-<div align="center"><h3><%
-if(request.getAttribute("msg")!=null){
-	out.println(request.getAttribute("msg"));
-} 
-%></h3></div>
-
+ 
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
